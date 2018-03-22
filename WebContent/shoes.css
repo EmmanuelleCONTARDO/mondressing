@@ -1,0 +1,32 @@
+.backhomepage{
+ 
+ text-align: left;
+ float: left;
+}
+
+.entete {
+  text-align: center;
+  color: black;
+  background-color: #E8F5E9;
+   padding: 20px 5px;
+}
+
+h1 {
+  display: inline;
+  	font-family : Arial;
+	  padding: 20px 5px;
+  
+}
+  
+h2 {
+    text-align: center;
+   color: black;
+  background-color: #F1F8E9;
+   padding: 15px 5px;
+   font-family : Arial;
+
+}
+@media screen and (max-width: 1024px) {
+  // Ici mes rules specifiques pour affichage sur ecran
+  // dont la taille est inferieure a 1024px.
+}
