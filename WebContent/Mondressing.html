@@ -1,90 +1,133 @@
 ﻿<!DOCTYPE html>
 <html>
-  <head>
-   <meta charset="utf-8">
-  <title>Mon dressing virtuel</title>
-    <link rel="stylesheet" href="Mondressing.css">
+<head>
+<meta charset="utf-8">
+<title>Mon dressing virtuel</title>
+<link rel="stylesheet" href="Mondressing.css">
+<meta name="viewport" content="width=device-width" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	
 </head>
 <!-- Ceci est mon commentaire -->
-  <body>
-  <h1  class= "h1" > Mon dressing virtuel</h1>
-  
-  <h2>  Bonjour et bienvenue sur votre dessing virtuel !</h2>
-  
-  <p>Vous pourrez lister vos chaussure, vos sac à main, vos robes afin de pouvoir confectionner vos tenues sans être obligée de les essayer.<br> Possibilité d'ajouter vos nouveaux articles dans chaque rubrique. </p>
-<p> C'est parti !!!</p>   
-  
-  
-  
-  
-  
-  
-  
+<body>
+	<h1>Mon dressing virtuel</h1>
 
-  <div class="conteneur">
-  
-  	<div class="element"> Mes chaussures <br><a href="shoes.html"><img class="photoHomePage" src="images/escarpins.jpg" alt="shoes"> </a> <br> <a href="#toggle">add shoes </a>
-		
-	  
-	<form id="toggle" class="form"  action="traitement" method="post">
-	 
-				  <div>  <!-- Marque field -->
-				  <label for="Marque">Marque :</label>
-				  <input placeholder="Saisir une marque" id="marque" type="text" name="marque">
-				  </div>
+	<h2>Bonjour et bienvenue sur votre dessing virtuel !</h2>
 
-		 
-				 <div> <!-- Modèle field -->
-				 <label for="Modèle">Modèle :</label>
-				 <input placeholder="Saisir le modèle" id="modele" type="text" name="modele">
-				 </div>
-				  
-				 <div> <!-- Material field -->
-				 <label for="Matière">Matière :</label>
-				 <input placeholder="Saisir le modèle" id="matiere" type="text" name="matiere">
-				 </div>
-				 
-				 <div> <!-- Color field -->
-				 <label for="Couleur">Couleur :</label>
-				 <input placeholder="Saisir le modèle" id="couleur" type="text" name="couleur">
-				 </div>
-				  
-				 <div> <!-- Prix field -->
-				 <label for="Prix">Prix :</label>
-				 <input placeholder="Saisir le prix" id="prix" type="text" name="prix">
-				  </div>
-				   
-				 <div> <!-- Pointure-->
-				 <label>Pointure :</label>
-				 <select>
-					<option value="" disabled selected>Choisir votre pointure</option>
-					<option value="1">36</option>
-					<option value="2">37</option>
-					<option value="3">38</option>
-				 </select>
-				 </div>
-				 <div> <!-- Submit button --> 
-				 <button class="button" type="submit">Ajouter chaussures</button>
-				 
-			     </div>
+	<p>
+		Vous pourrez lister vos chaussures, vos sac à main, vos robes afin de
+		pouvoir confectionner vos tenues sans être obligée de les essayer.<br>
+		Possibilité d'ajouter vos nouveaux articles dans chaque rubrique.
+	</p>
+	<p>C'est parti !!!</p>
+
+
+
+	<section class="conteneur">
+
+		<div class="element">
+
+			<figure>
+
+				<figcaption>Mes shoes</figcaption>
+				<a href="shoes.html"><img class="photoHomePage"
+					src="images/escarpins.jpg" alt="shoes"> </a>
+			</figure>
+			<a href="#addShoeForm">add shoes </a>
+
+			<form id="addShoeForm" action="traitement" method="post">
+
+				<div>
+					<!-- Marque field -->
+					<label for="brand">Marque :</label> <input
+						placeholder="Saisir une marque" id="brand" type="text"
+						name="brand">
+				</div>
+
+
+				<div>
+					<!-- Modèle field -->
+					<label for="model">Modèle :</label> <input
+						placeholder="Saisir le modèle" id="model" type="text" name="model">
+				</div>
+
+				<div>
+					<!-- Material field -->
+					<label for="material">Matière :</label> <input
+						placeholder="Saisir la matière" id="material" type="text"
+						name="material">
+				</div>
+
+				<div>
+					<!-- Color field -->
+					<label for="color">Couleur :</label> <input
+						placeholder="Saisir la couleur" id="color" type="color"
+						name="color">
+				</div>
+
+				<div>
+					<!-- Prix field -->
+					<label for="price">Prix :</label> <input
+						placeholder="Saisir le prix" id="price" type="number" step="0.01"
+						name="price">
+				</div>
+
+				<div>
+					<!-- Pointure-->
+					<label>Pointure :</label> <select>
+						<option value="" disabled selected>Choisir votre pointure</option>
+						<option value="36">36</option>
+						<option value="37">37</option>
+						<option value="38">38</option>
+					</select>
+				</div>
+				<div>
+					<!-- Submit button -->
+					<button class="button" type="submit">Ajouter chaussures</button>
+
+				</div>
 			</form>
+
+
+
+			<a href="#" class="close">close</a>
+		</div>
+		<div class="element">
+			Mes sacs <br> <a href="shoes.html"><img
+				class="photoHomePage" src="images/sac.jpg" alt="sac"> </a><br>
+			Add bag
+		</div>
+		<div class="element">
+			Mes robes <br> <a href="shoes.html"><img
+				class="photoHomePage" src="images/robe.jpg" alt="robe"> </a><br>
+			Add dresses
+		</div>
+		<div class="element">
+			Mes boutiques préférées <br> <a href="shoes.html"><img
+				class="photoHomePage" src="images/boutique.jpg" alt="boutique">
+			</a><br> Add shop
+		</div>
+
+	</section>
+
+	<footer>
+
+		<!-- Add icon library -->
 	
+		<p>Nous suivre</p>
 
+		<!-- Add font awesome icons -->
+		<a href="#" class="fa fa-facebook"></a> <a href="#"
+			class="fa fa-twitter"></a> <a href="#" class="fa fa-google"></a> <a
+			href="#" class="fa fa-linkedin"></a> <a href="#"
+			class="fa fa-youtube"></a> <a href="#" class="fa fa-instagram"></a> <a
+			href="#" class="fa fa-pinterest"></a> <a href="#"
+			class="fa fa-snapchat-ghost"></a> <a href="#" class="fa fa-skype"></a>
+	</footer>
 
-         <a href="#" class="close">close</a>
-	
-	</div>
-	
-	<div class="element"> Mes sacs <br><a href="shoes.html"><img class="photoHomePage" src="images/sac.jpg" alt="sac"> </a><br> Add bag</div>
-   <div class="element"> Mes robes <br> <a href="shoes.html"><img class="photoHomePage" src="images/robe.jpg" alt="robe"> </a><br> Add dresses</div>
-	<div class="element"> Mes boutiques préférées <br><a href="shoes.html"><img class="photoHomePage" src="images/boutique.jpg" alt="boutique"> </a><br> Add shop</div>
-      
-  </div>
+</body>
 
-  
-
-  </body>
-      
 </html>
 
 
